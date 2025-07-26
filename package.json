@@ -17,6 +17,13 @@
       "subtitle": "Optimise the selected text",
       "description": "Suggests improved replacement UI copy options for the provided text ",
       "mode": "no-view"
+    },
+    {
+      "name": "enhance-prompt",
+      "title": "Enhance LLM Prompt",
+      "subtitle": "Improve AI prompt effectiveness",
+      "description": "Transforms basic prompts into detailed, effective LLM prompts for better AI outputs",
+      "mode": "no-view"
     }
   ],
   "dependencies": {

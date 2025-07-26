@@ -7,9 +7,13 @@ export default async function Command() {
     const selectedText = await getSelectedText();
     
     if (selectedText) {
-      await showHUD("Improving UI Text");
+      const toast = await showToast({
+        style: Toast.Style.Animated,
+        title: "Improving UI Text...",
+      });
       const improvedCopy = await generateImprovedCopy(selectedText);
       await Clipboard.paste(improvedCopy);
+      await toast.hide();
       await showToast({
         style: Toast.Style.Success,
         title: "Text Enhanced",
