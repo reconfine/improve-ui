@@ -46,7 +46,16 @@ async function getSelectedText(): Promise<string | null> {
 
 async function generateImprovedCopy(text: string): Promise<string> {
   try {
-    const prompt = `Improve this UX copy focussing on clarity and conciseness, use NZ english spelling. Return only the improved copy, do not explain your reasoning: ${text}`;
+    const prompt = `Revise this UX copy to be clearer and more concise, using New Zealand English spelling. Focus on:
+- Simplifying complex language
+- Removing redundancies
+- Favouring concise accurate language
+- Maintaining a friendly, approachable tone
+- Ensuring proper NZ spelling conventions
+
+Return only the improved copy without explanations or notes.
+
+Original text: ${text}`;
     return await AI.ask(prompt);
   } catch (error) {
     showFailureToast(error, { title: "Failed to generate new copy" });
