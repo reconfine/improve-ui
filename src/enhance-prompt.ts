@@ -52,14 +52,18 @@ async function generateEnhancedPrompt(text: string): Promise<string> {
     const prompt = `Enhance this request: "${text}"
 
 Make my request more effective by:
-1. Clarifying the main goal
-2. Adding helpful context
-3. Specifying format needs
-4. Including any constraints
-5. Requesting examples if useful
-6. Asking for explanations where needed
+1. Clarifying the main goal and specific outcome desired
+2. Adding relevant context and background information
+3. Specifying preferred output format (bullet points, paragraphs, code blocks, etc.)
+4. Including any constraints or limitations to consider
+5. Requesting specific examples that illustrate the desired output
+6. Asking for step-by-step explanations where appropriate
+7. Defining key terms that might be ambiguous
+8. Specifying the level of detail needed (brief overview vs comprehensive analysis)
+9. Indicating any sources or references that should be considered
+10. Requesting alternative approaches or perspectives if relevant
 
-Return only the enhanced request.
+Return only the enhanced request without explanations or meta-commentary.
 
 Enhanced request:`;
     

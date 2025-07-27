@@ -1,36 +1,29 @@
-# UI Text Improver
+# AI Text Enhancer
 
-A Raycast extension that automatically enhances UI microcopy and LLM prompts by leveraging AI to generate clearer, more concise, and user-friendly text alternatives.
+A Raycast extension that enhances UI text and LLM prompts using AI for better user experiences and more effective AI interactions.
 
-## What it does
+## Commands
 
-This extension takes your selected text and uses AI to improve it for better user experience. It includes two powerful commands:
+### 🎨 Improve UI Text
+Transforms UI copy into user-friendly microcopy. Perfect for designers, developers, and product teams.
 
-### Improve UI Text
-Enhances UI microcopy for better user experience. Particularly useful for:
+**Examples:**
+- `"Click here"` → `"Get started"`
+- `"Submit form"` → `"Save your information"`
 
-- **Figma designs** - Quickly improve microcopy in your design mockups
-- **Web applications** - Enhance button text, form labels, and interface copy
-- **Mobile apps** - Optimize app interface text for clarity and brevity
-- **Marketing copy** - Refine promotional text for better engagement
+### 🤖 Enhance LLM Prompt
+Converts basic prompts into detailed, effective AI prompts for better outputs.
 
-### Enhance LLM Prompt
-Transforms basic prompts into highly effective AI prompts for better outputs. Perfect for:
-
-- **AI development** - Improve prompt engineering for more accurate responses
-- **Content creation** - Get better structured and detailed AI outputs
-- **Research** - Create prompts that generate more comprehensive results
-- **Code generation** - Enhance prompts for better code suggestions
+**Example:**
+- Basic: `"Write a blog post about AI"`
+- Enhanced: `"Write a 800-word blog post about AI for a technical audience. Include specific examples, current trends, and practical applications. Use a professional but accessible tone."`
 
 ## Features
 
-- **Smart text selection** - Automatically captures your currently selected text
-- **AI-powered improvements** - Uses Raycast AI to generate better alternatives
-- **New Zealand English** - Optimized for NZ spelling conventions (UI Text command)
-- **Prompt enhancement** - Transforms basic prompts into detailed, effective LLM prompts
-- **Instant replacement** - Automatically pastes the improved text back to your clipboard
-- **Friendly tone** - Maintains approachable, user-friendly language
-- **No-view mode** - Works seamlessly in the background
+- **Smart text selection** - Captures selected text from any application
+- **AI-powered improvements** - Uses Raycast AI for contextually appropriate enhancements
+- **Instant results** - Processes with animated feedback and auto-pastes to clipboard
+- **No-view mode** - Seamless workflow integration
 
 ## Requirements
 
@@ -38,51 +31,50 @@ Transforms basic prompts into highly effective AI prompts for better outputs. Pe
 - **macOS** - Uses AppleScript for text selection
 - **Selected text** - Must have text selected in any application
 
-## How to use
+## Usage
 
-### Improve UI Text
-1. **Select text** in any application (Figma, browser, text editor, etc.)
-2. **Trigger the command** using your assigned hotkey
-3. **Wait for processing** - The extension will show "Improving UI Text"
-4. **Get improved copy** - The enhanced text is automatically pasted to your clipboard
-
-### Enhance LLM Prompt
-1. **Select a basic prompt** in any application
-2. **Trigger the command** using your assigned hotkey
-3. **Wait for processing** - The extension will show "Enhancing LLM Prompt"
-4. **Get enhanced prompt** - The improved prompt is automatically pasted to your clipboard
+1. **Select text** in any application
+2. **Trigger command** using your hotkey
+3. **Watch animation** - See processing status
+4. **Get enhanced text** - Automatically pasted to clipboard
 
 ## Installation
 
-1. Clone this repository
-2. Navigate to the `improve-ui` directory
-3. Install dependencies: `pnpm install`
-4. Build the extension: `pnpm run dev`
-5. Add to Raycast Extensions
+```bash
+# Install via Raycast API
+npx @raycast/api@latest install ai-text-enhancer
+
+# Or clone and setup manually
+git clone <repository>
+cd ai-text-enhancer
+pnpm install
+pnpm run dev
+```
 
 ## Development
 
 ```bash
-# Install dependencies
 pnpm install
-
-# Start development mode
 pnpm run dev
+pnpm run build
+pnpm run lint
+pnpm run publish
 ```
 
 ## Troubleshooting
 
-- **"No text selected"** - Make sure you have text selected before running the command
-- **"Requires Raycast PRO"** - You need a Raycast PRO account for AI features
-- **"An error occurred"** - Check your internet connection and Raycast AI access
-- **"Failed to enhance prompt"** - Ensure your selected text is a valid prompt that can be enhanced
+- **"No text selected"** - Select text before running command
+- **"Requires Raycast PRO"** - Need PRO account for AI features
+- **"An error occurred"** - Check internet connection and AI access
 
-## License
+## Pro Tips
 
-MIT License - see LICENSE file for details.
+- Bind to hotkeys: `Hyper+I` for UI text, `Hyper+P` for prompts
+- Works in Figma, ChatGPT, text editors, and more
+- Use for iterative improvement of content
 
 ---
 
-**Suggestion**: Bind both commands to hotkeys (like `Hyper+I` for UI text and `Hyper+P` for prompts) for instant access while working in design tools or AI development
+**Ready to enhance your text?** Select any text and try the commands! ✨
 
 
