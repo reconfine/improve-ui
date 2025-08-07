@@ -41,10 +41,7 @@ Converts basic prompts into detailed, effective AI prompts for better outputs.
 ## Installation
 
 ```bash
-# Install via Raycast API
-npx @raycast/api@latest install ai-text-enhancer
-
-# Or clone and setup manually
+clone and setup manually
 git clone <repository>
 cd ai-text-enhancer
 pnpm install
