@@ -41,7 +41,6 @@ Converts basic prompts into detailed, effective AI prompts for better outputs.
 ## Installation
 
 ```bash
-clone and setup manually
 git clone <repository>
 cd ai-text-enhancer
 pnpm install
