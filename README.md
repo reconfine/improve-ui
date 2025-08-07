@@ -1,6 +1,6 @@
 # AI Text Enhancer
 
-A Raycast extension that enhances UI text and LLM prompts using AI for better user experiences and more effective AI interactions.
+A Raycast extension that takes your currently selected text, and replaces it with an improved version via RaycastAI
 
 ## Commands
 
